@@ -71,14 +71,15 @@ namespace TNNT_Pizza_system
 
             decimal deal = 0.00m;
 
-            if ((topping_ppi.Checked && topping_Gppr.Checked && topping_oni.Checked)
-               || (topping_Rppr.Checked && topping_ach.Checked && topping_ppi.Checked))
+            if ((topping_ppi.Checked && topping_Gppr.Checked && topping_oni.Checked) || (topping_Rppr.Checked && topping_ach.Checked && topping_ppi.Checked))
             {
                 deal = 2.50m;
             }
             else
             {
+                deal = 0.00m;
             }
+
             //--------------------------------------------------------------------------------
 
             // TOTAL & LABEL PRINT OUT
