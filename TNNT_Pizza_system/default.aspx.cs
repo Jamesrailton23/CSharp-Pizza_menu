@@ -89,7 +89,7 @@ namespace TNNT_Pizza_system
 
             label_total.Text = total.ToString();
             label_dollar_sign.Text = "$";
-
+            //------------------------------------------------------------------------------------------
         }
 
         protected void button_order_Click(object sender, EventArgs e)
