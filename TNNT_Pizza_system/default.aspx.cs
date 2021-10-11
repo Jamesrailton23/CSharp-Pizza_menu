@@ -72,7 +72,7 @@ namespace TNNT_Pizza_system
 
             // deal ------------------------------------------------------------------------------------------------------------------------------------------
 
-            decimal deal = 0.00m;
+           /* decimal deal = 0.00m;
 
             if ((topping_ppi.Checked && topping_Gppr.Checked && topping_oni.Checked) || (topping_Rppr.Checked && topping_ach.Checked && topping_ppi.Checked))
             {
@@ -82,13 +82,13 @@ namespace TNNT_Pizza_system
             {
                 deal = 0.00m;
             }
-
+ */
             //----------------------------------------------------------------------------------------------------------------------------------------------------
 
             // TOTAL & LABEL PRINT OUT -------------------------------------------------------------------
 
-            decimal sub_total = pizza_size + crust_total + toppings_total - deal;
-            decimal total = sub_total - deal;
+            decimal sub_total = pizza_size + crust_total + toppings_total;
+            decimal total = sub_total;
 
             label_total.Text = total.ToString();
             label_dollar_sign.Text = "$";
@@ -96,9 +96,6 @@ namespace TNNT_Pizza_system
             //------------------------------------------------------------------------------------------
         }
 
-        protected void button_order_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
